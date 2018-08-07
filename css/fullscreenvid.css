@@ -13,6 +13,7 @@ h2 {
   line-height: 1.5;
   color: #333;
   overflow-x: hidden;
+  overflow-y: hidden;
   text-transform: uppercase;
   padding-top: 30px;
 
@@ -199,7 +200,65 @@ a:visted {
 }
 
 
-@media (max-width: 960px){
-  padding-right: 3rem;
-  padding-left: 3rem;
+@media screen and (max-width: 768px){
+
+  h2 {
+    font-size: 1em;
+    line-height: 3.5;
+  }
+
+  h3 {
+    font-size: 0.75em;
+  }
+
+  body {
+    font-size: 0.5em;
+  }
+
+  #header-name {
+    font-size: 3em;
+    padding-left: 125px;
+  }
+
+  .header-content p {
+    font-size: 0.5em;
+    line-height: 2;
+    padding-left: 125px;
+  }
+
+  .navbar {
+    width: 100%;
+    line-height: 15px;
+    padding-top: 15px;
+    padding-bottom: 55px;
+  }
+
+  li {
+    width: 35%;
+    padding: 10px 15px 10px 5px;
+  }
+
+  .contact-section
+  {
+    width: 100%;
+    padding-bottom: 65px;
+  }
+
+  .fullscreen-video-wrap {
+    display: none;
+  }
+
+  .courtney-image {
+    width: 50%;
+    padding: 10px 5px;
+  }
+
+  .v-header {
+    height: 65vh;
+    padding-bottom: 1px;
+  }
+
+  .header-overlay {
+    display: none;
+  }
 }
