@@ -271,9 +271,9 @@ a:visted {
 
 /* Media Queries -----------*/
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 500px) {
 
-  .fullscreen-video-wrap {
+  .v-header .fullscreen-video-wrap .header-overlay .fullscreen-video-wrap video {
     display: none;
 
   }
