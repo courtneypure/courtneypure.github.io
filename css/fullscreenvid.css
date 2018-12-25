@@ -271,7 +271,7 @@ a:visted {
 
 /* Media Queries -----------*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 667px) {
 
   .fullscreen-video-wrap {
     display: none;
