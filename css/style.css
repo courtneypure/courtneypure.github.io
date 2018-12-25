@@ -123,6 +123,15 @@ a:visted {
 
 }
 
+label {
+  margin: 0 40px 0 0;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
 
 /* Floated Columns ----------------- */
 
@@ -145,3 +154,5 @@ a:visted {
   float: right;
 
 }
+
+/* Media Queries --------------------*/
