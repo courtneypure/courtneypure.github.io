@@ -59,7 +59,7 @@ body {
 }
 
 .btn {
-  background-color: #ff6347;
+  background-color: #e75a40;
   color: #fff;
   padding: 0 10px;
   border-radius: 50px 50px;
@@ -74,13 +74,15 @@ body {
 li {
   display: inline;
   width: 100%;
+  height: 100%;
   font-size: 1em;
-  padding: 70px 30px;
+  padding: 15px 30px;
   text-transform: uppercase;
 
 }
 
 li a {
+  padding: 50px 10px;
   color: white;
   text-decoration: none;
 }
@@ -93,14 +95,14 @@ a:visted {
 
 .navbar {
     text-align: center;
-    background-color: #ff6347;
+    background-color: #e75a40;
     padding: 10px 30px;
 }
 
 .contact-section {
-  background-color: #ff6347;
+  background-color: #e75a40;
   width: 100vw;
-  padding-bottom: 60px;
+  padding: 40px 60px;
   left: 0;
   position: absolute;
   overflow: hidden;
@@ -305,6 +307,23 @@ footer {
     line-height: 20px;
     padding-bottom: 0;
   }
+
+  li {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    font-size: 1em;
+
+    text-transform: uppercase;
+
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+  }
+
 
 .navbar {
   display: none;
