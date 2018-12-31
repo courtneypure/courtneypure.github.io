@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background: #f7f7f4;
 }
 
 h1 {
@@ -59,12 +60,19 @@ body {
 }
 
 .btn {
-  background-color: #e75a40;
+  background-color: #eb4146;
   color: #fff;
-  padding: 0 10px;
+  padding: 5px 10px;
   border-radius: 50px 50px;
   text-decoration: none;
 
+}
+
+.tomato {
+  display: inline-block;
+  width: 100px;
+  height: 77px;
+  margin-top: 10%;
 }
 
 .courtney-image {
@@ -82,8 +90,9 @@ li {
 }
 
 li a {
-  padding: 50px 10px;
-  color: white;
+  line-height: 20px;
+  padding: 25px 15px;
+  color: #eb4146;
   text-decoration: none;
 }
 
@@ -94,13 +103,14 @@ a:visted {
 }
 
 .navbar {
+    line-height: 20px;
     text-align: center;
-    background-color: #e75a40;
-    padding: 10px 30px;
+    background-color: #f7f7f4;
+    padding: 5px 5px;
 }
 
 .contact-section {
-  background-color: #e75a40;
+  background-color: #f7f7f4;
   width: 100vw;
   padding: 40px 60px;
   left: 0;
@@ -122,7 +132,7 @@ a:visted {
 }
 
 .copyright {
-  color: white;
+  color: #eb4146;
 
 }
 
