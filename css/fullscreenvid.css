@@ -68,13 +68,6 @@ body {
 
 }
 
-.tomato {
-  display: inline-block;
-  width: 100px;
-  height: 77px;
-  margin-top: 10%;
-}
-
 .courtney-image {
   border-radius: 50%;
 }
@@ -103,10 +96,10 @@ a:visted {
 }
 
 .navbar {
-    line-height: 20px;
     text-align: center;
     background-color: #f7f7f4;
     padding: 5px 5px;
+    font-weight: 600;
 }
 
 .contact-section {
@@ -118,11 +111,16 @@ a:visted {
   overflow: hidden;
 }
 
+.contact-section a {
+  font-weight: 600;
+}
+
 #contact {
   padding-top: 50px;
   color: white;
 
 }
+
 
 .artwork {
   float: left;
@@ -277,7 +275,7 @@ footer {
   }
 
   .contact-section a {
-    padding: 70px 0;
+    padding: 5px;
     line-height: 36px;
   }
 
@@ -330,13 +328,17 @@ footer {
   }
 
   li a {
-    color: white;
+    color: #eb4146;
     text-decoration: none;
   }
 
 
 .navbar {
   display: none;
+}
+
+.btn {
+  padding: 10px 10px;
 }
 
 footer .menu {
