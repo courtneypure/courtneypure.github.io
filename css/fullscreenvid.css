@@ -14,7 +14,7 @@ h2 {
   text-align: center;
   margin: 0;
   font:500 1.5em "Helvetica Neue", sans-serif;
-  line-height: 1.5;
+  line-height: 2;
   color: #333;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -31,6 +31,7 @@ h3 {
   color: #333;
   overflow-x: hidden;
   text-transform: uppercase;
+  padding-top: 15px;
 
 }
 
@@ -42,12 +43,16 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  margin: 5px;
+
+}
 
 .container {
   max-width: 960px;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: auto;
+  margin: 200px;
   text-align: center;
 
 }
@@ -56,8 +61,8 @@ body {
   text-align: center;
   font-size: 1rem;
   display: block;
-  padding: 0 50px;
 }
+
 
 .btn {
   background-color: #eb4146;
@@ -121,11 +126,16 @@ a:visted {
 
 }
 
+.clear {
+  clear: left;
+
+}
 
 .artwork {
+  width: 45%;
   float: left;
-  width: 50%;
-  padding-top: 25px;
+  margin: 5px;
+  padding: 25px 5px 10px 0;
 
 }
 
@@ -137,30 +147,15 @@ a:visted {
 .text {
   text-align: right;
   line-height: 1.5em;
+  float: right;
+  margin: 10px;
+  width: 50%;
 
 
 }
 
-.illustration-artwork {
-  float: left;
-  width: 50%;
-  padding-top: 25px;
-
-}
-
-.mouse-artwork {
-  float: left;
-  width: 50%;
-  padding-top: 25px;
-
-}
-
-
-.fungi-artwork {
-  float: left;
-  width: 50%;
-  padding-top: 25px;
-
+.heading {
+  text-align: right;
 }
 
 footer {
@@ -169,76 +164,19 @@ footer {
 }
 
 
-/* @media screen and (max-width: 768px){
+/* @media screen and (max-width: 1200px) ---------*/
 
-  h2 {
-    font-size: 1em;
-    line-height: 3.5;
+@@media screen and (max-width: 1200px) {
+
+  .artwork {
+    width: 5%;
   }
+}
 
-  h3 {
-    font-size: 0.75em;
-  }
 
-  body {
-    font-size: 0.5em;
-  }
 
-  #header-name {
-    font-size: 3em;
-    padding-left: 125px;
-  }
 
-  .header-content p {
-    font-size: 0.5em;
-    line-height: 2;
-    padding-left: 125px;
-  }
-
-  .navbar {
-    border-bottom: 1px solid #EAEAEB;
-    text-align: center;
-    height: 70px;
-    line-height: 70px
-  }
-
-  .menu {
-    margin: 0 30px 0 0;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: grey;
-    margin-left: 0 10px;
-    line-height: 70px;
-  }
-
-  .contact-section
-  {
-    width: 100%;
-    padding-bottom: 65px;
-  }
-
-  .fullscreen-video-wrap {
-    display: none;
-  }
-
-  .courtney-image {
-    width: 50%;
-    padding: 10px 5px;
-  }
-
-  .v-header {
-    height: 65vh;
-    padding-bottom: 1px;
-  }
-
-  .header-overlay {
-    display: none;
-  }
-} */
-
-/* Media Queries -----------*/
+/* Media Queries - Cellphone -----------*/
 
 @media only screen and (max-width: 600px) {
 
