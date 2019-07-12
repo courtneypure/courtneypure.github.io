@@ -1,68 +1,65 @@
 * {
-  box-sizing: border-box;
-  background: #f7f7f4;
+  background: #ffffff;
 }
 
+/* ----------NAV STYLES ------------*/
+
+.navbar {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+li {
+  display: inline;
+  font-size: 1em;
+  padding: 15px 30px;
+  text-transform: uppercase;
+
+}
+
+li a {
+  line-height: 10px;
+  padding: 5px 15px;
+  color: #eb4146;
+  text-decoration: none;
+}
+
+a:visted {
+  color: lightblue;
+
+}
+
+.tomato {
+  width: 60px;
+  height: 43px;
+
+}
+
+/* ----------END NAV STYLES ------------*/
+
+
+
+/* ----------INTRO STYLES ------------*/
+
 h1 {
+  font:700 2.5em "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   padding: 0 50px;
   text-align: center;
 
 }
 
-h2 {
-  text-align: center;
-  margin: 0;
-  font:500 1.5em "Helvetica Neue", sans-serif;
-  line-height: 2;
-  color: #333;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  text-transform: uppercase;
-  padding-top: 30px;
-
-}
-
-h3 {
-  text-align: right;
-  margin: 0;
-  font:400 1.25em "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #333;
-  overflow-x: hidden;
-  text-transform: uppercase;
-  padding-top: 15px;
-
-}
-
-body {
-  margin: 0;
-  font:200 1em "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #333;
-  overflow-x: hidden;
-}
-
-p {
-  margin: 5px;
-
-}
-
-.container {
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 200px;
-  text-align: center;
-
+.courtney-image {
+  border-radius: 50%;
 }
 
 .header-content p {
   text-align: center;
-  font-size: 1rem;
-  display: block;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 2;
 }
-
 
 .btn {
   background-color: #eb4146;
@@ -73,105 +70,124 @@ p {
 
 }
 
-.courtney-image {
-  border-radius: 50%;
-}
+/* -----END INTRO STYLES-------------*/
 
-li {
-  display: inline;
-  width: 100%;
-  height: 100%;
-  font-size: 1em;
-  padding: 15px 30px;
+
+
+/* --------- BODY STYLES ---------*/
+
+ h2 {
+  text-align: center;
+  font:500 1.5em "Helvetica Neue", sans-serif;
+  line-height: 2;
+  color: #333;
   text-transform: uppercase;
+  padding: 0 0 5px 0;
+  clear: right;
 
 }
 
-li a {
-  line-height: 20px;
-  padding: 25px 15px;
-  color: #eb4146;
-  text-decoration: none;
+h3 {
+  text-align: right;
+  margin: 0;
+  font:400 1.25em "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-transform: uppercase;
+  padding: 20px 0 10px 0;
+  clear: right;
+
 }
 
-
-a:visted {
-  color: lightblue;
-
-}
-
-.navbar {
+h4 {
     text-align: center;
-    background-color: #f7f7f4;
-    padding: 5px 5px;
-    font-weight: 600;
+    clear: right;
 }
 
-.contact-section {
-  background-color: #f7f7f4;
-  width: 100vw;
-  padding: 40px 60px;
-  left: 0;
-  position: absolute;
-  overflow: hidden;
+body {
+  margin: 40px;
+  font:200 1em "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  padding: 10px;
 }
 
-.contact-section a {
-  font-weight: 600;
-}
-
-#contact {
-  padding-top: 50px;
-  color: white;
+p {
+  line-height: 1;
 
 }
 
-.clear {
-  clear: left;
 
-}
+/* --------- END BODY STYLES ---------*/
+
+
+
+
+
+/* --------- GRID STYLES ---------*/
+
 
 .artwork {
-  width: 45%;
+  width: 500px;
+  margin: auto;
+  padding: 20px 20px;
   float: left;
-  margin: 5px;
-  padding: 25px 5px 10px 0;
 
-}
-
-.copyright {
-  color: #eb4146;
 
 }
 
 .text {
+  width: 450px;
   text-align: right;
-  line-height: 1.5em;
-  float: right;
-  margin: 10px;
-  width: 50%;
-
+  margin: auto;
+  padding: 20px 20px;
+  float: left;
 
 }
 
-.heading {
-  text-align: right;
-}
+/* --------- END GRID STYLES ---------*/
+
+
+
+/* --------- FOOTER STYLES ---------*/
 
 footer {
-  padding-top: 250px;
+  padding-top: 25px;
+}
+
+.contact-section {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+.contact-section a{
+  padding-top: 30px;
+  font-weight: 600;
 
 }
+
+.coffee-chat {
+  padding-bottom: 15px;
+
+}
+
+.copyright {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+
+}
+
+/* --------- END FOOTER STYLES ---------*/
+
 
 
 /* @media screen and (max-width: 1200px) ---------*/
 
 @@media screen and (max-width: 1200px) {
 
-  .artwork {
-    width: 5%;
-  }
-}
 
 
 
