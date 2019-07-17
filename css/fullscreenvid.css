@@ -106,7 +106,7 @@ body {
 }
 
 p {
-  line-height: 1;
+  line-height: 2;
 
 }
 
@@ -141,11 +141,6 @@ p {
 
 
 /* --------- FOOTER STYLES ---------*/
-
-footer {
-  position: sticky;
-  padding-top: 25px;
-}
 
 .contact-section {
   width: 100%;
