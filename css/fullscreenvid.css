@@ -1,37 +1,62 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
 * {
   background-color: #f7f7f4;
+  border-sizing: border-box;
 }
 
-/* ----------NAV STYLES ------------*/
-
-.navbar {
-    text-align: center;
-    padding: 5px;
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-li {
-  display: inline;
-  font-size: 1em;
-  padding: 15px 30px;
-  text-transform: uppercase;
-
-}
-
-li a {
-  line-height: 10px;
-  padding: 5px 15px;
+a {
   text-decoration: none;
-  color: #fff;
+  color: #eb4146;
 
 }
+
+ul {
+  margin: 0;
+
+}
+
+/* =================================
+  Nav Styles
+==================================== */
+
+/* ----------NAV FLEXBOX ------------*/
+.main-header {
+  display: flex;
+}
+
+.main-header {
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-header a {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 50px;
+
+}
+
+/* ----------NAV ELEMENT STYLES ------------*/
+
+.navbar,
+footer {
+  font-weight: 600;
+  list-style-type: none;
+}
+
 
 /* ----------END NAV STYLES ------------*/
 
 
 
-/* ----------INTRO STYLES ------------*/
+/* =================================
+  Intro Styles
+==================================== */
 
 h1 {
   font:700 2.5em "Helvetica Neue", sans-serif;
@@ -46,13 +71,25 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
 
+}
+.header-content {
+  padding-bottom: 25px;
+
+}
 .header-content p {
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
-  line-height: 1;
-  padding: 10px 40px;
+  line-height: 2;
+}
+
+.btnA {
+  background-color: #eb4146;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  text-decoration: none;
+
 }
 
 .btn {
@@ -75,25 +112,22 @@ h1 {
   font:500 1.5em "Helvetica Neue", sans-serif;
   color: #333;
   text-transform: uppercase;
-  clear: right;
 
 }
 
 h3 {
-  text-align: right;
+  text-align: left;
   margin: 0;
   font:400 1.25em "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #333;
   text-transform: uppercase;
   padding: 20px 0 10px 0;
-  clear: right;
 
 }
 
 h4 {
     text-align: center;
-    clear: right;
     padding-bottom: 20px;
 }
 
@@ -120,21 +154,13 @@ p {
 /* --------- GRID STYLES ---------*/
 
 
-.artwork {
+ .artwork {
   width: 400px;
-  padding: 40px 20px 20px 150px;
-  float: left;
-
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text {
-  width: 400px;
-  text-align: right;
-  padding: 20px 150px 20px 20px;
-  float: right;
-
-}
 
 /* --------- END GRID STYLES ---------*/
 
@@ -143,30 +169,37 @@ p {
 /* --------- FOOTER STYLES ---------*/
 
 .contact-section {
-  width: 100%;
-  overflow: hidden;
-  display: block;
-  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
 }
 
 li a {
   color: #eb4146;
 }
+
+
 .contact-section a{
-  font-weight: 600;
+  display: block;
+  margin: 10px 15px 10px 0;
 
 }
 
-.coffee-chat {
-  margin: auto;
-  width: 25%;
-  padding-bottom: 15px;
+.contact-section p {
+  margin-right: 15px;
+
+}
+
+.contact-section
+.btn {
+  display: inline;
+  margin-right: 0;
 
 }
 
 .copyright {
-  text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
 }
 
@@ -176,150 +209,63 @@ li a {
 
 /* @media screen and (max-width: 1200px) ---------*/
 
-@media only screen and (max-width: 320px) {
+@media (min-width: 769px) {
+
+.main-header {
+  width: 90%;
+  margin: 0 auto;
 
 }
 
 
-
-/* Media Queries - iPhone SE -----------*/
-
-@media only screen and (max-width: 320px) {
-
-/* Intro Styles ------------------------*/
-
-header {
-  padding: 5px;
-
-}
-.navbar {
-  display: none;
-}
-
-  .courtney-image {
-    margin: auto;
-    width: 100%;
-    padding: 5px;
-    border-radius: 30%;
-
-  }
-
-  h1 {
-    margin: auto;
-    width: 100%;
-    font-size: 2rem;
-    padding: 5px;
-  }
-
-.header-content {
-  padding-top: 0;
-  padding-bottom: 50px;
-
-}
-
-  .header-content p {
-    margin: auto;
-    width: 100%;
-    padding: 5px;
-    line-height: 2;
-    text-align: center;
-    font-size: 100%;
-  }
-
-/* Intro Styles END ------------------------*/
-
-/* Body Styles  ------------------------*/
-.body {
-  align: center;
-  width: 100%;
-  margin: auto;
-  padding: 20px 30px;
-
-  }
-
-  h2 {
-    width: 100%;
-    padding: 5px 0;
-    line-height: 35px;
-    font-size: 1.25em;
-  }
-
-  h3 {
-    width: 100%;
-    padding: 5px 0;
+  /* li {
+    display: inline;
     font-size: 1em;
-    text-align: right;
-  }
-
-    .artwork {
-      margin: auto;
-      width: 100%;
-      padding: 5px;
-
-    }
-
-    .text {
-      width: 100%;
-      padding: 0 5px;
-      line-height: 20px;
-
-      }
-/* Body Styles END ------------------------*/
-
-
-
-
-/* Footer Styles -----------------*/
-footer {
-      position: sticky;
-      margin: auto;
-      width: 100%;
-  }
-
-footer p {
-  text-align: center;
-
-}
-
-.copyright {
-  font-size: 0.5em;
-
-}
-  .contact-section {
-    margin: auto;
-    width: 100%;
-  }
-
-  .contact-section a {
-    display: block;
-    font-weight: 500;
-    padding: 15px;
-  }
-
-
-  li {
-    margin: auto;
-    width: 100%;
-    display: block;
-    padding: 5px;
-    font-size: 1em;
+    padding: 5px 10px;
     text-transform: uppercase;
-    color: #eb4146;
 
-  }
+  } */
 
-  li a {
-    color: #eb4146;
+  /* li a {
+    line-height: 10px;
+    padding: 5px 15px;
     text-decoration: none;
-    text-align: center;
+    color: #eb4146;
+
+  } */
+
+  .container {
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
+}
 
 .coffee-chat {
-    width: 100%;
-    padding-top: 75px;
+  width: 100%;
+  padding-bottom: 5px;
+
 }
 
-/* Footer Styles End -----------*/
 
+
+@media (min-width: 1025px) {
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+  .main-header {
+  max-width: 1150px;
+  }
+
+  .coffee-chat {
+    width: 40%;
+    padding-bottom: 5px;
+
+  }
 
 }
