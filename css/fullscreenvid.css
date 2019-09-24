@@ -9,7 +9,6 @@
 
 a {
   text-decoration: none;
-  color: #eb4146;
 
 }
 
@@ -25,11 +24,12 @@ ul {
 /* ----------NAV FLEXBOX ------------*/
 .main-header {
   display: flex;
+  justify-content: space-around;
 }
 
 .main-header {
-  flex-direction: column;
   align-items: center;
+  padding: 4vh 0;
 
 }
 
@@ -41,12 +41,15 @@ ul {
 
 }
 
+.about {
+  height: 100vh;
+}
+
 /* ----------NAV ELEMENT STYLES ------------*/
 
-.navbar,
-footer {
-  font-weight: 600;
-  list-style-type: none;
+
+.navbar {
+  display: none;
 }
 
 
@@ -74,13 +77,15 @@ h1 {
 
 }
 .header-content {
-  padding-bottom: 25px;
-
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
+
 .header-content p {
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
-  line-height: 2;
+  line-height: 1;
 }
 
 .btnA {
@@ -115,8 +120,13 @@ h1 {
 
 }
 
+.heading {
+  text-align: right;
+}
+
+
 h3 {
-  text-align: left;
+  text-align: right;
   margin: 0;
   font:400 1.25em "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -132,17 +142,18 @@ h4 {
 }
 
 body {
-  margin: 40px;
   font:200 1em "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #333;
-  padding: 10px;
 }
 
 p {
+  text-align: right;
   line-height: 2;
 
 }
+
+
 
 
 /* --------- END BODY STYLES ---------*/
@@ -153,14 +164,23 @@ p {
 
 /* --------- GRID STYLES ---------*/
 
+.portfolio-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5vh;
 
- .artwork {
-  width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+.portfolio-item {
+  width: 90%;
+  padding: 0 4vw;
+}
+
+.artwork {
+ width: 450px;
+}
 
 /* --------- END GRID STYLES ---------*/
 
@@ -169,7 +189,7 @@ p {
 /* --------- FOOTER STYLES ---------*/
 
 .contact-section {
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
@@ -182,14 +202,10 @@ li a {
 
 .contact-section a{
   display: block;
-  margin: 10px 15px 10px 0;
+  margin: 10px 5px 10px 0;
 
 }
 
-.contact-section p {
-  margin-right: 15px;
-
-}
 
 .contact-section
 .btn {
@@ -203,6 +219,17 @@ li a {
 
 }
 
+.coffee-chat {
+  width: 70%;
+  padding-bottom: 5px;
+
+}
+
+footer {
+  font-weight: 600;
+  list-style-type: none;
+}
+
 /* --------- END FOOTER STYLES ---------*/
 
 
@@ -211,39 +238,32 @@ li a {
 
 @media (min-width: 769px) {
 
-.main-header {
-  width: 90%;
-  margin: 0 auto;
-
+.portfolio-items {
+  flex-direction: row;
 }
 
-
-  /* li {
-    display: inline;
-    font-size: 1em;
-    padding: 5px 10px;
-    text-transform: uppercase;
-
-  } */
-
-  /* li a {
-    line-height: 10px;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #eb4146;
-
-  } */
-
-  .container {
-    width: 50%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
-
-.coffee-chat {
+.portfolio-item {
   width: 100%;
-  padding-bottom: 5px;
+
+}
+
+.main-header,
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+  list-style-type: none;
+  }
+
+.navbar a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+
+}
 
 }
 
@@ -251,19 +271,12 @@ li a {
 
 @media (min-width: 1025px) {
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-}
-
   .main-header {
   max-width: 1150px;
   }
 
   .coffee-chat {
-    width: 40%;
+    width: 30%;
     padding-bottom: 5px;
 
   }
