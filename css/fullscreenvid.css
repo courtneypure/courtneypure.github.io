@@ -25,13 +25,10 @@ ul {
 .main-header {
   display: flex;
   justify-content: space-around;
-}
-
-.main-header {
   align-items: center;
   padding: 4vh 0;
-
 }
+
 
 .main-header a {
   text-align: center;
@@ -41,17 +38,12 @@ ul {
 
 }
 
-.about {
-  height: 100vh;
-}
-
 /* ----------NAV ELEMENT STYLES ------------*/
 
 
 .navbar {
   display: none;
 }
-
 
 /* ----------END NAV STYLES ------------*/
 
@@ -88,15 +80,7 @@ h1 {
   line-height: 1;
 }
 
-.btnA {
-  background-color: #eb4146;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 50px;
-  text-decoration: none;
-
-}
-
+.btnA,
 .btn {
   background-color: #eb4146;
   color: #fff;
@@ -105,6 +89,7 @@ h1 {
   text-decoration: none;
 
 }
+
 
 /* -----END INTRO STYLES-------------*/
 
@@ -153,12 +138,7 @@ p {
 
 }
 
-
-
-
 /* --------- END BODY STYLES ---------*/
-
-
 
 
 
@@ -190,8 +170,7 @@ p {
 
 .contact-section {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: right;
 }
 
@@ -207,11 +186,10 @@ li a {
 }
 
 
-.contact-section
-.btn {
-  display: inline;
+.contact-section .btn{
+  display: inline-block;
   margin-right: 0;
-
+  margin-bottom: 30px;
 }
 
 .copyright {
@@ -222,7 +200,6 @@ li a {
 .coffee-chat {
   width: 70%;
   padding-bottom: 5px;
-
 }
 
 footer {
@@ -240,12 +217,11 @@ footer {
 
 .portfolio-items {
   flex-direction: row;
-}
+  }
 
 .portfolio-item {
   width: 100%;
-
-}
+  }
 
 .main-header,
 .navbar {
@@ -262,8 +238,7 @@ footer {
   display: block;
   padding: 10px 15px;
   text-transform: uppercase;
-
-}
+  }
 
 }
 
@@ -275,10 +250,13 @@ footer {
   max-width: 1150px;
   }
 
+  .about {
+    height: 100vh;
+  }
+
   .coffee-chat {
     width: 30%;
     padding-bottom: 5px;
-
   }
 
 }
