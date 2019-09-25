@@ -26,7 +26,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4vh 0;
+  padding-top: 15px;
 }
 
 
@@ -149,13 +149,13 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 5vh;
+  padding-bottom: 20px;
 
 }
 
 .portfolio-item {
   width: 90%;
-  padding: 0 4vw;
+  padding: 0 10px;
 }
 
 .artwork {
@@ -217,20 +217,25 @@ footer {
 
 .portfolio-items {
   flex-direction: row;
+  padding-bottom: 5vh;
   }
 
 .portfolio-item {
   width: 100%;
+  padding: 0 2vh;
   }
+
 
 .main-header,
 .navbar {
   display: flex;
   margin: 0 auto;
+  padding: 4vh 0;
   align-items: center;
   justify-content: space-around;
   font-weight: 600;
   list-style-type: none;
+
   }
 
 .navbar a {
