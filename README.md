@@ -8,6 +8,6 @@ Personal Website of animator & developer Courtney Pure.
 * JS
 
 ## AUTHORS
-**Courtney Pure** [GitHub](courtneypure.github.io)
+**Courtney Pure** [GitHub](https://github.com/courtneypure)
 
 
