@@ -358,6 +358,11 @@ align-items: center;
     p {
       padding-bottom: 15px;
   }
+  
+  .demoreeltape {
+    width: 100%;
+    padding: 100px;
+     }
 
 }
 
@@ -387,5 +392,10 @@ align-items: center;
     height: auto;
 
   }
+  
+  .demoreeltape {
+    width: 100%;
+    padding: 100px;
+     }
 
 }
