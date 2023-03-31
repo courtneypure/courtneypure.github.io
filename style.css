@@ -275,11 +275,15 @@ h3 {
 
  /* ---------button Styles---------- */
 
- button {
+ .button {
   width: 100%;
   border: none;
   background-color: #fffbf2;
   text-align: left;
+  text-decoration: none;
+  font-family: Futura, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
  }
 
  .fa-solid,
